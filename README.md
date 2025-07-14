@@ -4,10 +4,11 @@
 &emsp;&emsp;A smart download script supporting HTTP/FTP protocols, featuring automatic resume from breakpoints, download completion detection, and log optimization. Ideal for downloading large files in unstable network environments.
 
 
-用法: ./downloader.sh [选项] <URL>
+&emsp;&emsp;用法: ./downloader.sh [选项] <URL>
 
-选项:
+## 选项:
 
+```Bash
   -d, --directory <目录>   指定下载目录 (默认: downloads)
   
   -i, --interval <秒>      指定检查间隔 (默认: 600秒)
@@ -21,18 +22,30 @@
   -b, --buffer <大小>     设置输出缓冲区大小 (默认: 8192字节)
   
   -h, --help              显示此帮助信息
-  
+```
 
-示例
+## 示例
 
-# 基本用法
+### 基本用法
+
+```Bash
 ./downloader.sh URL
+```
 
-# 指定下载目录
+### 指定下载目录
+
+```Bash
 ./downloader.sh -d mydownloads URL
+```
 
-# 自定义检查间隔(300秒)
+### 自定义检查间隔(300秒)
+
+```Bash
 ./downloader.sh -i 300 URL
+```
 
-# 所有选项组合使用
+### 所有选项组合使用
+
+```Bash
 ./downloader.sh -d mydata -i 300 -t 2 -v URL
+```
