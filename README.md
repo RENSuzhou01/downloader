@@ -5,14 +5,23 @@
 
 
 用法: ./downloader.sh [选项] <URL>
+
 选项:
+
   -d, --directory <目录>   指定下载目录 (默认: downloads)
+  
   -i, --interval <秒>      指定检查间隔 (默认: 600秒)
+  
   -t, --tolerance <百分比> 指定文件大小误差容忍度 (默认: 5%)
+  
   -l, --log <文件>        指定日志文件 (默认: download.log)
+  
   -v, --verbose           启用详细输出
+  
   -b, --buffer <大小>     设置输出缓冲区大小 (默认: 8192字节)
+  
   -h, --help              显示此帮助信息
+  
 
 示例
 
